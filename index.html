@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portfolio — Fan Engagement & Frontend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header class="site">
+  <div class="nav-inner">
+    <span class="mark">KIRBY LASI HERMANTO</span>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#record">Track record</a>
+      <a href="#skills">Skills</a>
+      <a href="#newsletters">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Digital Marketing & Frontend</p>
+      <h1>Turning fan data to personalized engagements</h1>
+      <p class="lede">Digital marketing executive with 3 years' experience owning fan engagement campaigns, CRM strategy, and vendor-led product development in the sports and entertainment sector.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#project">See a live demo</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="score-row"><span class="num">600K+</span><span class="lbl">CRM records owned & segmented</span></div>
+      <div class="score-row"><span class="num">15→40%</span><span class="lbl">Email open rate, before → after</span></div>
+      <div class="score-row"><span class="num">100+</span><span class="lbl">Newsletter designed & sent</span></div>
+      <div class="score-row"><span class="num">30+</span><span class="lbl">Fan engagement campaigns launched</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">01</span><h2>About</h2></div>
+    <div class="about-grid">
+      <p>
+        I'm a digital marketing executive with three years of experience driving fan engagement campaigns, CRM strategy, and website and app enhancements in the sports and entertainment sector. I've also led vendor-managed game development projects from concept to launch. My day-to-day spans campaign planning and execution, CRM management and segmentation, and data analytics and reporting—turning fan data into engagement strategies powered by personalized content.
+      </p>
+      <p>
+        I also bring frontend development skills to the table, which I use to build newsletters, embed campaigns, and manage websites. Beyond execution, coding lets me prototype ideas before pitching them and build lightweight tools—like a quick data segmentation system—that cut down on manual work.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="record">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">02</span><h2>Track record</h2></div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Campaign ownership</span>
+        <h3>End-to-end fan engagement</h3>
+        <p>Planned, built and monitored fan engagement campaigns from brief to performance report, using past campaign metrics to shape what each audience segment saw next.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Vendor delivery</span>
+        <h3>Fantasy Football & Match Predictor</h3>
+        <p>Led vendor collaboration on fan-facing games, translating fan behaviour into feature requirements and iterating releases against them.</p>
+      </div>
+      <div class="card">
+        <span class="tag">CRM & data strategy</span>
+        <h3>Segmentation at 500,000+ users</h3>
+        <p>Owned CRM data management for the full fan database, built the segmentation strategy behind campaign targeting, and supported shortlisting of CDP tools to sharpen audience insight.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Email campaign strategy</span>
+        <h3>15–20% → 30–40% open rates</h3>
+        <p>Rebuilt email strategy around segmentation and structured A/B testing, roughly doubling average open rates over the course of ongoing iteration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">03</span><h2>Skills</h2></div>
+    <div class="skill-sheet">
+      <div class="skill-row"><span class="name">HTML / CSS</span><div class="bar"><span style="width:95%"></span></div><span class="level">Core Strength</span></div>
+      <div class="skill-row"><span class="name">JavaScript</span><div class="bar"><span style="width:70%"></span></div><span class="level">Working Knowledge</span></div>
+      <div class="skill-row"><span class="name">Bootstrap</span><div class="bar"><span style="width:85%"></span></div><span class="level">Confident</span></div>
+      <div class="skill-row"><span class="name">SQL</span><div class="bar"><span style="width:83%"></span></div><span class="level">Confident</span></div>
+      <div class="skill-row"><span class="name">Python</span><div class="bar"><span style="width:75%"></span></div><span class="level">Working knowledge</span></div>
+      <div class="skill-row"><span class="name">Google Analytics</span><div class="bar"><span style="width:88%"></span></div><span class="level">Confident</span></div>
+      <div class="skill-row"><span class="name">Segmentation & A/B testing</span><div class="bar"><span style="width:85%"></span></div><span class="level">Confident</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletters">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">04</span><h2>Newsletters I've designed</h2></div>
+    <p style="max-width:62ch;color:#3A473D;margin-top:-12px;margin-bottom:26px;">Each email is built to a single job: get a specific segment to take a specific action. Open one to scroll the full design.</p>
+    <div class="nl-grid" id="nlGrid"></div>
+  </div>
+</section>
+
+<dialog class="nl-dialog" id="nlDialog" aria-label="Newsletter preview">
+  <div class="bar-top"><span id="nlDialogTitle"></span><button class="close" id="nlClose">Close</button></div>
+  <div class="scroll"><img id="nlDialogImg" alt=""></div>
+</dialog>
+
+<section id="project">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">05</span><h2>Built, not just briefed</h2></div>
+    <p style="max-width:60ch;color:#3A473D;margin-top:-12px;margin-bottom:24px;">A small working demo of the kind of tool I'd normally have to request from a dev team. Type two subject lines and run a mock A/B split — the logic mirrors how I actually evaluate email tests.</p>
+    <div class="demo-box">
+      <div class="demo-grid">
+        <div>
+          <label for="subjA">Subject line A</label>
+          <input type="text" id="subjA" value="Your matchday ticket is waiting">
+        </div>
+        <div>
+          <label for="subjB">Subject line B</label>
+          <input type="text" id="subjB" value="Kick-off in 3 days — don't miss it">
+        </div>
+      </div>
+      <button class="btn primary" id="runDemo">Run A/B test</button>
+      <div class="result" id="demoResult"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">05</span><h2>Contact</h2></div>
+    <p style="max-width:50ch;color:#E4E9E1;">Open to roles that sit across marketing and frontend build — or straightforward digital marketing roles where a bit of dev fluency is a bonus.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">kirbylasihermanto@gmail.com</a>
+      <a href="https://www.linkedin.com/in/kirby-hermanto">linkedin.com/in/kirby-hermanto</a>
+      <!-- <a href="#">github.com/yourname</a> -->
+    </div>
+  </div>
+</section>
+
+<footer>Kirby Lasi Hermanto's Portfolio</footer>
+
+<script>
+
+(function(){
+  var newsletters = [
+    {
+      title:'AFC Asian Cup 2027: 100 days to go',
+      note:'Countdown email with a live timer, an official match ball reveal and a last-call push for the Asian Greats Bracket Challenge game.',
+      result:'[Add open rate / click-through rate]',
+      src:'Image/AC27-100DTG.png'
+    },
+    {
+      title:'Matchday Fantasy and Matchday Predictor Reminder',
+      note:'A recurring email every mathcday that serves as a reminder to play the game before the deadline closes. The links are trackable with UTM parameters.  ',
+      result:'[Add open rate / click-through rate]',
+      src:'Image/ACLE-ACL2-MD4-Reminder.png'
+    },
+    {
+      title:'Partner Specific Email',
+      note:'A partner branded newsletter announcing the launch of their Champions of Progress campaign.',
+      result:'[Add open rate / click-through rate]',
+      src:'Image/NEOM-CoP.png'
+    },
+    {
+      title:'AFC Women\'s Champions League Competition Kickoff ',
+      note:'Newsletter announcing the start of the AFC Women\'s Champions League while also launching the trivia quiz to increase the hype of the competition',
+      result:'[Add open rate / click-through rate]',
+      src:'Image/AWCL-KickOff.png'
+    }
+  ];
+  function sampleFor(i){ return { title:'Newsletter title '+(i+1), note:'Placeholder: short description of the campaign goal and audience.', result:'[Add open rate / click-through rate]', src:newsletters[0].src }; }
+  var grid=document.getElementById('nlGrid');
+  var dlg=document.getElementById('nlDialog');
+  for(var i=0;i<4;i++){
+    var n=newsletters[i]||sampleFor(i), el=document.createElement('div');
+    if(n){
+      el.className='nl-item';
+      el.innerHTML='<button class="nl-thumb" type="button" data-i="'+i+'" aria-label="Open '+n.title+'"><img src="'+n.src+'" alt="Preview of the newsletter: '+n.title+'" loading="lazy"><span class="open">View full email</span></button>'
+        +'<h3>'+n.title+'</h3><p>'+n.note+'</p>';
+    } else {
+      el.className='nl-empty';
+      el.textContent='Newsletter '+(i+1)+' goes here';
+    }
+    grid.appendChild(el);
+  }
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('.nl-thumb'); if(!b) return;
+    var n=newsletters[+b.dataset.i]||sampleFor(+b.dataset.i);
+    document.getElementById('nlDialogTitle').textContent=n.title;
+    var img=document.getElementById('nlDialogImg'); img.src=n.src; img.alt='Full newsletter: '+n.title;
+    dlg.showModal(); dlg.querySelector('.scroll').scrollTop=0;
+  });
+  document.getElementById('nlClose').addEventListener('click',function(){dlg.close();});
+  dlg.addEventListener('click',function(e){ if(e.target===dlg) dlg.close(); });
+})();
+(function(){
+  function scoreLine(text){
+    var t = text.trim();
+    var score = 50;
+    var lower = t.toLowerCase();
+    var urgency = ['today','now','3 days',"don't miss",'last chance','ends','waiting'];
+    var personal = ['your','you'];
+    urgency.forEach(function(w){ if(lower.indexOf(w)!==-1) score += 8; });
+    personal.forEach(function(w){ if(lower.indexOf(w)!==-1) score += 5; });
+    if(t.length>0 && t.length<=45) score += 10;
+    if(t.length>55) score -= 8;
+    if(/[!?]/.test(t)) score += 3;
+    return Math.max(20, Math.min(96, score));
+  }
+  document.getElementById('runDemo').addEventListener('click', function(){
+    var a = document.getElementById('subjA').value || 'Subject A';
+    var b = document.getElementById('subjB').value || 'Subject B';
+    var sa = scoreLine(a), sb = scoreLine(b);
+    var winner = sa >= sb ? a : b;
+    var wRate = Math.max(sa,sb), lRate = Math.min(sa,sb);
+    var box = document.getElementById('demoResult');
+    box.innerHTML = 'Projected open rate — <strong>' + wRate + '%</strong> vs ' + lRate + '%.<br>'
+      + '<span class="winner">Recommended send: “' + winner + '”</span><br>'
+      + 'Rough model only — favours personalisation, urgency cues and length under 45 characters, the same signals I check for in real subject-line tests.';
+    box.classList.add('show');
+  });
+})();
+</script>
+
+</body>
+</html>
